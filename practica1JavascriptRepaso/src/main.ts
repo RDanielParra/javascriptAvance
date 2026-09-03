@@ -1,6 +1,5 @@
 import './style.css'
-import { candidatosPromocion, getProductos, precioDescuentos, productosCategoria, valorInventario } from './services/productService'
-import type Product from './models/product'
+import { candidatosPromocion, precioDescuentos, productosCategoria, valorInventario } from './services/productService'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 

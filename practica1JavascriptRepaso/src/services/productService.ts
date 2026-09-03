@@ -21,7 +21,7 @@ export async function candidatosPromocion(){
   let products = await getProductos()
 
   let productosTratados = products.filter(e => e.rating >= 4.5)
-  productosTratados = products.filter(e => e.stock > 10)
+  productosTratados = productosTratados.filter(e => e.stock > 10)
   let productosFormateados = productosTratados.map(e => ({
     Nombre: e.title,
     Precio: e.price,
